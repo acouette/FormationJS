@@ -1,0 +1,33 @@
+Mise à niveau Javascript.
+
+1. Présentation rapide
+    1. Moi
+    2. Vous
+    3. Plan
+
+1. Introduction à javascript
+    a. Histoire
+    b. Caractéristiques
+2. Premiers pas
+    a. Les variables
+    b. les objets
+    c. les conditions
+    d. les boucles
+    e. use strict
+3. Types
+    a. Primitif
+    b. Reference
+4. Fonctions
+    a. Declaration
+    b. Paramètre
+    c. Overload
+    d. Object Methods
+    e. Le contexte this
+    f. Call, apply et bind
+5. Les objets
+    a. Assigner/Supprimer des propriétés
+    b. Tester les propriétés
+    c. Enumération
+    d. Accesseurs
+    e. PreventExtension/Seal/Freeze
+    f. Héritage : Constructors/Prototypes
