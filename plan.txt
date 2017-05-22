@@ -13,7 +13,7 @@ Mise à niveau Javascript.
     b. les objets
     c. les conditions
     d. les boucles
-    e. use strict
+    e. les fonctions
 3. Types
     a. Primitif
     b. Reference
@@ -31,3 +31,5 @@ Mise à niveau Javascript.
     d. Accesseurs
     e. PreventExtension/Seal/Freeze
     f. Héritage : Constructors/Prototypes
+
+Misc: use strict
