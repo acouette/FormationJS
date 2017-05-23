@@ -15,7 +15,7 @@ console.log(subst);
 
 
 //ES 2015
-const multiply = (x, y)=> {
+const multiply = (x, y) => {
     return x * y;
 };
 

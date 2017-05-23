@@ -19,11 +19,10 @@ Mise à niveau Javascript.
     b. Reference
 4. Fonctions
     a. Declaration
-    b. Paramètre
-    c. Overload
-    d. Object Methods
-    e. Le contexte this
-    f. Call, apply et bind
+    b. Paramètre / Overload
+    c. Object Methods
+    d. Le contexte this
+    e. Call, apply et bind
 5. Les objets
     a. Assigner/Supprimer des propriétés
     b. Tester les propriétés
