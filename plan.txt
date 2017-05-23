@@ -14,9 +14,6 @@ Mise à niveau Javascript.
     c. les conditions
     d. les boucles
     e. les fonctions
-3. Types
-    a. Primitif
-    b. Reference
 4. Fonctions
     a. Declaration
     b. Paramètre / Overload
@@ -24,11 +21,12 @@ Mise à niveau Javascript.
     d. Le contexte this
     e. Call, apply et bind
 5. Les objets
+    a. Primitif
+    b. Reference
     a. Assigner/Supprimer des propriétés
     b. Tester les propriétés
-    c. Enumération
     d. Accesseurs
     e. PreventExtension/Seal/Freeze
-    f. Héritage : Constructors/Prototypes
+6.  Les classes
 
 Misc: use strict

@@ -15,16 +15,13 @@ const objectLit = {
 };
 
 
-//access properties
-console.log(objectLit.anAtt);
-console.log(objectLit['the-attr']);
-
-
 //identify reference type
 
 //typeof for functions !
 
 //instanceof for others
+
+console.log(now instanceof Date);
 
 
 
