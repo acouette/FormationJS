@@ -1,21 +1,17 @@
 function getIncrementer() {
 
-    let val = 0;
+  let val = 0;
 
-    return {
-        incrementAndGet: function(){
-            val++;
-            return val;
-        }
-    }
-
+  return () => {
+    val++;
+    return val;
+  }
 
 }
 
-
 const incrementer = getIncrementer();
 
-console.log(incrementer.incrementAndGet());
-console.log(incrementer.incrementAndGet());
-console.log(incrementer.incrementAndGet());
-console.log(incrementer.incrementAndGet());
+console.log(incrementer());
+console.log(incrementer());
+console.log(incrementer());
+console.log(incrementer());

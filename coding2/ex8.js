@@ -13,8 +13,7 @@ const play = (state, letter) => {
 
   return {
     wordToGuess: state.wordToGuess,
-    currentProgress: newCurrentProgress,
-    win: state.wordToGuess === newCurrentProgress
+    currentProgress: newCurrentProgress
   };
 };
 
@@ -27,14 +26,13 @@ const rl = readline.createInterface({
 
 let state = {
   wordToGuess: 'maisons',
-  currentProgress: '*******',
-  win: false
+  currentProgress: '*******'
 };
 
 rl.on('line', (input) => {
 
   state = play(state, input);
-  if (state.win) {
+  if (state.wordToGuess === state.currentProgress) {
     console.log('you win');
     rl.close();
   }
