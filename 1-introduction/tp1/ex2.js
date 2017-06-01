@@ -5,14 +5,13 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-
 rl.on('line', (input) => {
   const valueAsNumber = parseInt(input, 10);
-  if(valueAsNumber < 20){
+  if (valueAsNumber < 20) {
     console.log('vous êtes jeunes');
-  }else if(valueAsNumber > 60){
+  } else if (valueAsNumber > 60) {
     console.log('vous êtes vieux');
-  }else if(valueAsNumber <30){
+  } else if (valueAsNumber < 30) {
     console.log("vous n'êtes plus tout jeune et pas complètement vieux");
   }
 

@@ -1,7 +1,7 @@
 //exemple de scope de fonction
 function getIncrementer() {
 
-  let val = 0;
+  var val = 0;
 
   return () => {
     val++;
