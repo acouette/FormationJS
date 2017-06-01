@@ -24,5 +24,3 @@ console.log(myFruitGenerator());
 console.log(myFruitGenerator());
 console.log(myFruitGenerator());
 console.log(myFruitGenerator());
-console.log(myFruitGenerator());
-console.log(myFruitGenerator());

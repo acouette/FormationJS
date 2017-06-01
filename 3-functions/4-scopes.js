@@ -1,3 +1,4 @@
+//exemple de scope de fonction
 function getIncrementer() {
 
   let val = 0;
@@ -7,6 +8,12 @@ function getIncrementer() {
     return val;
   }
 
+}
+
+try{
+  console.log(val);
+}catch(err){
+  console.error(err.message);
 }
 
 const incrementer = getIncrementer();

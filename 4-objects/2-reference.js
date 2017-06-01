@@ -1,3 +1,5 @@
+//voici tous les built in types
+//mode d'instanciation classique
 const items = new Array();
 const now = new Date();
 const error = new Error("Something bad happened.");
@@ -6,7 +8,6 @@ const object = new Object();
 const re = new RegExp("\\d+");
 
 //prefer litteral form
-
 const itemsLit = [];
 
 const objectLit = {
@@ -15,14 +16,16 @@ const objectLit = {
 };
 
 
-//identify reference type
+//pour identifier les functions on utilise encore typeof
+console.log(typeof func);
 
-//typeof for functions !
 
-//instanceof for others
-
+//sinon instanceof
 console.log(now instanceof Date);
-
+console.log(items instanceof Array);
+console.log(error instanceof Error);
+console.log(object instanceof Object);
+console.log(re instanceof RegExp);
 
 
 
