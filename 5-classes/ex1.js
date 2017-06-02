@@ -1,62 +1,50 @@
-class Ship {
-  constructor(positions) {
-    this.positions = positions;
-    this.shipState = {};
-    for (let i = 0; i < this.positions.length; i++) {
-      this.shipState[this.positions[i].x] = this.shipState[this.positions[i].x] || {};
-      this.shipState[this.positions[i].x][this.positions[i].y] = 'ok';
+class Shape {
+
+    constructor(color) {
+        this.color = color;
     }
-  }
 
-  isShipAt(x, y) {
-    return this.shipState[x] && this.shipState[x][y];
-  }
-}
+    getColor() {
+        return this.color;
+    }
 
-class Board {
-
-  constructor(ships) {
-    this.ships = ships;
-  }
-
-  isShipAt(x, y) {
-    return this.ships.filter(s => s.isShipAt(x, y)) > 0;
-  }
+    draw() {
+        console.log('drawing a nice shape');
+    }
 
 }
 
-const readline = require('readline');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+class Rectangle extends Shape{
 
-const player1 = new Player('Dylan');
-const ships = [new Ship([{ x: 4, y: 2 }, { x: 4, y: 3 }]),
-  new Ship([{ x: 10, y: 4 }, { x: 11, y: 4 }, { x: 12, y: 4 }]),
-  new Ship([{ x: 5, y: 10 }, { x: 5, y: 11 }, { x: 5, y: 12 }])];
-const board = new Board(15, 15, ships);
+    constructor(color, width, length) {
+        super(color);
+        this.width = width;
+        this.length = length;
+    }
 
-let state = {
-  board,
-  player: player1
-};
+    draw() {
+        console.log('drawing a nice rectangle');
+    }
 
-rl.on('line', (input) => {
+    getArea() {
+        return this.width * this.height;
+    }
 
-  const positions = input.split(' ');
+    getCircumference() {
+        return this.width * 2 + this.heigth * 2;
+    }
 
-  const shipAt = board.isShipAt(positions[0], positions[1]);
-  console.log('touched : ' + shipAt);
+}
 
-  if (false) {
-    console.log('you win');
-    rl.close();
-  }
-  console.log('current word : ' + state.currentProgress);
+class Square extends Rectangle{
 
-});
+    constructor(color, side) {
+        super(color, side, side);
+    }
 
+    draw() {
+        console.log('drawing a nice litte square');
+    }
 
-
+}
