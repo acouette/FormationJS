@@ -7,7 +7,7 @@ const func = new Function("console.log('Hi');");
 const object = new Object();
 const re = new RegExp("\\d+");
 
-//prefer litteral form
+//preferer la forme litterale
 const itemsLit = [];
 
 const objectLit = {

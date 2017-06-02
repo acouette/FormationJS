@@ -3,10 +3,12 @@ const cat = {
     age: 9
 };
 
-
-console.log('name' in cat);
+//il est possible de tester si les propriétés d'un objet existent
+console.assert('name' in cat);
+//ici toString appartient au prototype d'Object
 console.log('toString' in cat);
 
+//hasOwnProperty vérifie si la propriété est sans l'héritage
 console.log(cat.hasOwnProperty('name'));
 console.log(cat.hasOwnProperty('toString'));
 

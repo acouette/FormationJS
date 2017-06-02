@@ -6,8 +6,6 @@ class Ship {
       this.shipState[this.positions[i].x] = this.shipState[this.positions[i].x] || {};
       this.shipState[this.positions[i].x][this.positions[i].y] = 'ok';
     }
-
-    console.log(this.shipState);
   }
 
   isShipAt(x, y) {
@@ -17,24 +15,14 @@ class Ship {
 
 class Board {
 
-  constructor(width, height, ships) {
-    this.width = width;
-    this.height = height;
+  constructor(ships) {
     this.ships = ships;
   }
 
   isShipAt(x, y) {
-    return this.ships.filter(s => s.isShipAt(x, y)).length === 1;
+    return this.ships.filter(s => s.isShipAt(x, y)) > 0;
   }
 
-}
-
-class Player {
-
-  constructor(name, board) {
-    this.name = name;
-    this.board = board;
-  }
 }
 
 const readline = require('readline');
