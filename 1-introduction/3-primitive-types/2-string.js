@@ -10,6 +10,9 @@ console.log(es6StringInterpolation.length);
 
 String.fromCharCode(54); // 6;
 
+//split => array
+console.log('this is a string'.split(' '));
+
 
 //conversion implicite booleenne
 if('abcd'){

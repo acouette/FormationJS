@@ -6,7 +6,7 @@ function multiply(a, b) {
     return a * b;
 }
 
-//prend en argument une fonction ainsi que 2 autres paramètre
+//prend en argument une fonction ainsi que 2 autres paramètres
 function callFunction(functionAsArgument, a, b) {
     //la fonction invoque ensuite la fonction avec les paramètres
     return functionAsArgument(a, b);

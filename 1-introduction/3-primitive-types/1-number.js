@@ -15,6 +15,10 @@ const myNumberFromString = parseInt(myNumberAsString, 10); // 123;
 Number.isInteger(myInteger); //true
 
 
+//arithmetic floating points
+console.log(0.2 + 0.1);
+
+
 
 //conversion implicite booleenne
 if(4){

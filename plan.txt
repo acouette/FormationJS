@@ -1,32 +1,28 @@
 Mise à niveau Javascript.
 
-1. Présentation rapide
-    1. Moi
-    2. Vous
-    3. Plan
-
 1. Introduction à javascript
-    a. Histoire
-    b. Caractéristiques
 2. Premiers pas
-    a. Les variables
-    b. les objets
-    c. les conditions
-    d. les boucles
-    e. les fonctions
-4. Fonctions
-    a. Declaration
-    b. Paramètre / Overload
-    c. Object Methods
-    d. Le contexte this
-    e. Call, apply et bind
+    a. Variables
+    b. Boucles
+    c. Types primitifs
+    d. Objets et tableau
+    e. Conditions
+    e. Fonctions
+2. La programmation fonctionnelle
+    a. Fonctions 1st class citizen
+    b. Filter/map/reduce
+3. Fonctions
+    a. Paramètres
+    b. Object Methods
+    c. Call, apply et bind
+    d. Les scopes
 5. Les objets
     a. Primitif
     b. Reference
     a. Assigner/Supprimer des propriétés
     b. Tester les propriétés
     d. Accesseurs
-    e. PreventExtension/Seal/Freeze
+    e. Locker les objets
 6.  Les classes
-
-Misc: use strict
+    a. Classes
+    b. Héritage

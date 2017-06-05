@@ -1,9 +1,8 @@
-const triangleSize = process.argv[2];
-
-for (let i = 0; i < triangleSize; i++) {
-  let line = '';
-  for (let j = 0; j < i + 1; j++) {
-    line += '*';
+for (let i = 1; i <= 10; i++) {
+  console.log(`table des ${i}`);
+  let table = '';
+  for (let j = 1; j <= 10; j++) {
+    table+= `${i}*${j} = ${i*j} ; `;
   }
-  console.log(line);
+  console.log(table);
 }
