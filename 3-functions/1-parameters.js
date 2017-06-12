@@ -66,3 +66,9 @@ const addDestructuring = ({a, b}) => {
     return a + b;
 };
 console.log(addDestructuring({a: 1, b: 2}));
+
+const {a, b} = {a: 1, b: 2};
+
+const [c,d, ...e] = ['toto', 'tata', 'titi', 'tete'];
+
+console.log(e);

@@ -21,10 +21,11 @@ const customer = {
       this._zipCode = zipCode;
     }
   }
-
 };
 
 console.log(customer.fullAddress);
+customer.zipCode = '12113';
+console.log(customer.zipCode);
 
 const hiddenCustomer = (function () {
 
@@ -52,9 +53,7 @@ const hiddenCustomer = (function () {
         _zipCode = zipCode;
       }
     }
-
   }
-
 })();
 
 

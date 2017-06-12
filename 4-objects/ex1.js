@@ -22,7 +22,7 @@ for (let prop in customer) {
 }
 
 for (let prop in customer) {
-  if (typeof  customer[prop] === 'function') {
+  if (customer[prop] instanceof Function) {
     console.log(`attribute ${prop} has value ${customer[prop]()}`)
   }
 }

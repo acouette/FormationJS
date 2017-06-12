@@ -37,3 +37,4 @@ const mappedPeople = people.map(person=> Object.assign({}, person, {nameLength: 
 console.log(mappedPeople);
 
 
+

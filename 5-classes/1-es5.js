@@ -12,8 +12,9 @@ const Animal = function (name) {
   this.name = name;
   this.sayName = function () {
     console.log(this.name);
-  }
+  };
 };
+
 
 //instanciation
 const a = new Animal('Guimauve');
@@ -34,7 +35,6 @@ Animal.prototype.sayWow = function () {
 };
 //elles sont accessible à toutes les instances
 a.sayWow();
-
 
 
 
@@ -59,6 +59,7 @@ c.miaow();
 
 console.log(c instanceof Animal); //true
 console.log(c instanceof Cat); //true
+
 
 
 

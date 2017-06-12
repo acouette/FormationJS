@@ -1,17 +1,14 @@
 function getFruitGenerator() {
 
-  const fruits = ['banana', 'apple', 'mango'];
+    const fruits = ['banana', 'apple', 'mango'];
 
-  let lastFruit;
+    let lastFruit;
 
-  return () => {
-    const possibleFruits = fruits.concat();
-    if (lastFruit !== undefined) {
-      possibleFruits.splice(fruits.indexOf(lastFruit), 1);
+    return () => {
+        const possibleFruits = fruits.filter(f=> f !== lastFruit);
+        lastFruit = possibleFruits[Math.floor(Math.random() * possibleFruits.length)];
+        return lastFruit;
     }
-    lastFruit = possibleFruits[Math.floor(Math.random() * possibleFruits.length)];
-    return lastFruit;
-  }
 
 }
 

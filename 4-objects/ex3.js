@@ -1,4 +1,4 @@
-const propsNumber = process.argv[2];
+const propsNumber = process.env.COUNT || 4;
 
 const myObject = {};
 for(let i = 1; i<=propsNumber; i++){

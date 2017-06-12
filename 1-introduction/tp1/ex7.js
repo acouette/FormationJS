@@ -23,6 +23,6 @@ const reverse1 = (str) => {
 console.log(reverse1(toMirror));
 
 
-const reverse2 = (str) => str.split('').reverse().join('');
+const reverse2 = str => str.split('').reverse().join('');
 
 console.log(reverse2(toMirror));

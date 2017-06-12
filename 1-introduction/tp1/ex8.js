@@ -1,6 +1,5 @@
 //instantiate and assign to a variable 3 objects with the following attributes : name, age, gender
 
-
 const person1 = {
     name: 'Jules',
     age: 0,
@@ -19,22 +18,35 @@ const person3 = {
     gender: 'F'
 };
 
+const person4 = {
+    name: 'Matthieu',
+    age: 42,
+    gender: 'M'
+};
 
-//put them in an array
-const people = [person1, person2, person3];
+const person5 = {
+    name: 'Maureen',
+    age: 62,
+    gender: 'F'
+};
 
 
-// create a loop that only displays females
-// hint 1 : there are two attributes on arrays : length and push
+const people = [person1, person2, person3, person4, person5];
+
+
+// afficher Uniquement les femmes de la liste et la somme de leurs ages
+let ageSum = 0;
 for (let i = 0; i < people.length; i++) {
-    if(people[i].gender === 'F'){
+    if (people[i].gender === 'F') {
+        ageSum += people[i].age;
         console.log(people[i]);
     }
 }
+console.log(`sum of female ages : ${ageSum}`);
 
 
-//by looping on the array, add a property to each person named 'nameLength' representing the number of letters in their name
-//then print the array
+
+//Ecrire une boucle for qui ajoute un attribut sur chaque objet : nameLength
 for (let i = 0; i < people.length; i++) {
     people[i].nameLength = people[i].name.length;
 }

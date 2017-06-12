@@ -15,12 +15,8 @@ const objectLit = {
   'the-attr' : 456
 };
 
-
-//pour identifier les functions on utilise encore typeof
-console.log(typeof func);
-
-
-//sinon instanceof
+//pour identifier les types references, on utilise instanceof
+console.log( func instanceof Function);
 console.log(now instanceof Date);
 console.log(items instanceof Array);
 console.log(error instanceof Error);

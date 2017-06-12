@@ -1,4 +1,7 @@
-const triangleSize = process.argv[2];
+const triangleSize = process.env.TRIANGLE_SIZE || 7;
+
+
+
 
 for (let i = 0; i < triangleSize; i++) {
   let line = '';
